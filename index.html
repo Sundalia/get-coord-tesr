@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COORD-SEARCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body" class="coord_form_container">
+        
+
+        <form 
+            formaction="btn"
+            class="form"
+            id="form"
+            name="form">
+            <div>
+                <img src="" id="img" alt=" ">
+            </div>
+            <div >
+                <h1>ВВЕДИТЕ КООРДИНАТЫ ПАРКОВКИ</h1>
+            </div>
+            <div >
+                <label for="tile">
+                    TILE
+                </label>
+                <input 
+                    id="tile"
+                    name="tile"
+                    type="text"
+                    onkeydown="formatCoord()">
+            </div>
+            <div >
+                <label for="zoom">
+                    ZOOM
+                </label>
+                <input
+                    id="zoom" 
+                    name="zoom"
+                    type="text"
+                    onkeydown="formatCoord()"> 
+            </div>
+            <div>
+                <button
+                    type="button"
+                    id="btn"
+                    name="btn"
+                    href="">
+                    ПОЛУЧИТЬ ТОЧКУ
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="dist/inputmask.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
